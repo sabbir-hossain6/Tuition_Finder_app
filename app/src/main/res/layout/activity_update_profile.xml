@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfile">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Are you student/tutor ?"
+                android:textSize="18sp" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:id="@+id/typeGroup"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+                <RadioButton
+                    android:id="@+id/student"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Student"
+                    android:onClick="checkType"
+                    android:checked="true"
+                    />
+                <RadioButton
+                    android:id="@+id/tutor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Tutor"
+                    android:onClick="checkType"
+                    />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/hudai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Don't leave any field blank"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Age"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etSchool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Institution"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/etDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Department"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/etResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Result"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Phone"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etNID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="NID/Passport"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etHour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Tuition Duration (Hour)"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/etVacancy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Vacancy"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etSalary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Expected Salary"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/etSkills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Skills"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Gender"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spgender"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Select level of student you are or you can teach"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class 1" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class 2" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class 3" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class 4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class 5" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class 6" />
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class 7" />
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class 8" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <CheckBox
+                android:id="@+id/checkBox9"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class 9" />
+
+            <CheckBox
+                android:id="@+id/checkBox10"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class 10" />
+
+            <CheckBox
+                android:id="@+id/checkBox11"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class 11" />
+
+            <CheckBox
+                android:id="@+id/checkBox12"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class 12" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkBox13"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Std 1" />
+
+            <CheckBox
+                android:id="@+id/checkBox14"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Std2" />
+
+            <CheckBox
+                android:id="@+id/checkBox15"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Std 3" />
+
+            <CheckBox
+                android:id="@+id/checkBox16"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Std 4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <CheckBox
+                android:id="@+id/checkBox17"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Std 5" />
+
+            <CheckBox
+                android:id="@+id/checkBox18"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Std 6" />
+
+            <CheckBox
+                android:id="@+id/checkBox19"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Std 7" />
+
+            <CheckBox
+                android:id="@+id/checkBox20"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Std 8" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkBox21"
+                android:layout_marginLeft="5dp"
+                android:onClick="selectLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Std 9" />
+
+            <CheckBox
+                android:id="@+id/checkBox22"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Std 10" />
+
+            <CheckBox
+                android:id="@+id/checkBox23"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Std 11" />
+
+            <CheckBox
+                android:id="@+id/checkBox24"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Std 12" />
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <CheckBox
+                android:id="@+id/checkBox25"
+                android:onClick="selectLevel"
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="IELTS" />
+
+            <CheckBox
+                android:id="@+id/checkBox26"
+                android:onClick="selectLevel"
+                android:layout_width="94dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="Spoken" />
+
+            <CheckBox
+                android:id="@+id/checkBox27"
+                android:onClick="selectLevel"
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="GRE" />
+
+            <CheckBox
+                android:id="@+id/checkBox28"
+                android:onClick="selectLevel"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GMAT" />
+        </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Select subjects you can teach"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <CheckBox
+                android:id="@+id/checkBox29"
+                android:onClick="selectSubject"
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="Math" />
+
+            <CheckBox
+                android:id="@+id/checkBox30"
+                android:onClick="selectSubject"
+                android:layout_width="94dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="Science" />
+
+            <CheckBox
+                android:id="@+id/checkBox31"
+                android:onClick="selectSubject"
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="English" />
+
+            <CheckBox
+                android:id="@+id/checkBox32"
+                android:onClick="selectSubject"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bangla" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <CheckBox
+                android:id="@+id/checkBox33"
+                android:onClick="selectSubject"
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="ICT" />
+
+            <CheckBox
+                android:id="@+id/checkBox34"
+                android:onClick="selectSubject"
+                android:layout_width="94dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="Physics" />
+
+            <CheckBox
+                android:id="@+id/checkBox35"
+                android:layout_width="93dp"
+                android:onClick="selectSubject"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:text="Chemistry" />
+
+            <CheckBox
+                android:id="@+id/checkBox36"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:onClick="selectSubject"
+                android:layout_height="wrap_content"
+                android:text="Biology" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <CheckBox
+                android:id="@+id/checkBox37"
+                android:onClick="selectSubject"
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="Social" />
+
+            <CheckBox
+                android:id="@+id/checkBox38"
+                android:onClick="selectSubject"
+                android:layout_width="94dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="Islam" />
+
+            <CheckBox
+                android:id="@+id/checkBox39"
+                android:onClick="selectSubject"
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="Hindi" />
+
+            <CheckBox
+                android:id="@+id/checkBox40"
+                android:onClick="selectSubject"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H. Math" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/saveBtn"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#DD696868"
+                android:onClick="saveToFirebase"
+                android:text="Save"></Button>
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

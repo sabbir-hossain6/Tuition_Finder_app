@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "540653706503",
+    "firebase_url": "https://tuition-finder-nayla.firebaseio.com",
+    "project_id": "tuition-finder-nayla",
+    "storage_bucket": "tuition-finder-nayla.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540653706503:android:cff2f8ad7ff739d61639a2",
+        "android_client_info": {
+          "package_name": "com.nayla.tuitionfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540653706503-085m9n2531881pab5oou2e8f15eu11kh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nayla.tuitionfinder",
+            "certificate_hash": "fcc2cb6842c5793651289f09059c4eb130d2cd3f"
+          }
+        },
+        {
+          "client_id": "540653706503-sjk49k4ojilaqajagvbmbcl9572rpner.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nayla.tuitionfinder",
+            "certificate_hash": "b4356b71b0f3917148940eb3e70ebac67de6ebb0"
+          }
+        },
+        {
+          "client_id": "540653706503-5oern9fp1ma2kekgfiiog4f1jntk71jv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3eydA6RmKx2UlKLXe7C1SNhrBICFoSww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540653706503-5oern9fp1ma2kekgfiiog4f1jntk71jv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
